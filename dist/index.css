@@ -14,3 +14,68 @@ body {
     margin: 0;
     background: #fafafa;
 }
+
+.opblock-tag {
+    position: sticky;
+    top: 0;
+    background: #fafafa;
+    z-index: 1;
+}
+
+.opblock-tag:hover {
+    background: #fafafa !important;
+}
+
+.opblock-summary-path {
+    user-select: text;
+    cursor: text;
+}
+
+div.swagger-ui > div:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.swagger-ui > div:nth-of-type(2) > div {
+    width: 50%;
+}
+
+div.swagger-ui > div:nth-of-type(2) > .scheme-container ~ .wrapper {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow: auto;
+}
+
+.swagger-ui > div:nth-of-type(2) > div:empty {
+    display: none;
+}
+
+.swagger-ui .scheme-container {
+    background: none;
+    box-shadow: none;
+    margin: 0;
+}
+
+.swagger-ui .info {
+    margin: 15px 0;
+}
+
+.swagger-ui .info .main {
+    margin: 0;
+}
+
+.swagger-ui .info .base-url {
+    display: inline;
+}
+
+.swagger-ui .info .description {
+    display: none;
+}
+
+.swagger-ui + .wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
