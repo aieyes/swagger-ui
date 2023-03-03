@@ -9,6 +9,11 @@ export default class AuthorizeBtn extends React.Component {
     getComponent: PropTypes.func.isRequired
   }
 
+  constructor(props, context) {
+    super(props, context);
+    window.authBtn = this;
+  }
+
   render() {
     let { isAuthorized, showPopup, onClick, getComponent } = this.props
 

@@ -14,6 +14,7 @@ export default class Topbar extends React.Component {
   constructor(props, context) {
     super(props, context)
     this.state = { url: props.specSelectors.url(), selectedIndex: 0 }
+    window.topbar = this;
   }
 
   UNSAFE_componentWillReceiveProps(nextProps) {

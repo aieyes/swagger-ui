@@ -2,6 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 
 export default class AuthorizationPopup extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+    window.popup = this;
+  }
   close =() => {
     let { authActions } = this.props
 

@@ -19,6 +19,7 @@ export default class Oauth2 extends React.Component {
 
   constructor(props, context) {
     super(props, context)
+    window.oauth2 = this;
     let { name, schema, authorized, authSelectors } = this.props
     let auth = authorized && authorized.get(name)
     let authConfigs = authSelectors.getConfigs() || {}
